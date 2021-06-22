@@ -1,0 +1,329 @@
+@import url('https:://fonts.googlelapis.com/css?family=Montserrat:500');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+}
+/* Header navlink */
+header {
+    background-color: #24252A;
+    display:flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    font-size: 16px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+header .openbtn {
+    font-size: 40px;
+    display:none;
+    cursor: pointer;
+}
+
+header a, li {
+    text-decoration: none;
+    color: #edf0f1;
+}
+.nav-link {
+    list-style: none;
+}
+.nav-link li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-link a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-link a:hover{
+    color: #0088a9;
+}
+
+header .cta button{
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    padding: 9px 25px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+header .cta button:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+
+/* Header sidebar */
+header .side-bar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: 	#404040;
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+header .side-bar .list a {
+    display: list-item;
+    padding: 30px 0px 17px 30px;
+    list-style: none;
+    font-size:22px;
+    transition: all 0.3s ease 0s;
+}
+
+header .side-bar .closebtn {
+    padding: 0px 17px 0px 0px;
+    color: white;
+    cursor:pointer;
+    transition: all 0.3s ease 0s;
+}
+
+
+header .side-bar a:hover, header .side-bar .closebtn:hover {
+    color: #0088a9;
+}
+
+header .side-bar .closebtn {
+    font-size:55px;
+}
+
+/* Sjkuksee */
+.hero {
+    background-color: white;
+    display:flex;
+    text-align:center;
+    /*160*/
+    padding: 237px 0px 165px 0;
+    justify-content: space-between;
+    
+}
+
+
+.hero .left-col {
+    margin-left: 18rem;
+    margin-top:60px;
+}
+
+.hero .left-col h1 {
+    font-size:50px;
+}
+
+.hero .left-col .left-col-p1 {
+    font-size:20px;
+}
+
+.hero .left-col .left-col-p2 {
+    font-size:20px;
+    display: none;
+}
+
+.hero .img-sj {
+    width: 435px;
+    margin-right: 13rem;
+    border: 3px solid black;
+    border-radius: 30px;
+}
+
+/* About me */
+.about-me .a-right-col {
+    color:white;
+    width:500px;
+    border-radius: 10px;
+    text-align: center;
+    margin-right:150px;
+}
+
+.about-me .a-right-col p {
+    line-height:25px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.about-me .a-right-col h2 {
+    font-size:35px;
+    padding-bottom: 20px;
+}
+
+.about-me {
+    padding: 60px 0px 60px 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #24252A;
+    /* background-color: #24252A; */
+}
+
+.about-me .me {
+    border-radius: 30px;
+    width: 300px;
+    margin-left: 17rem;
+}
+
+/* Experience */
+.experience{
+    background-color: white;
+    padding: 43px 0px 43px 0px;
+    text-align:center;
+}
+
+.experience .exp-header{
+    font-size: 40px;
+}
+
+.experience ul li img{
+    width:180px;
+}
+.experience ul li{
+    display:inline-block;
+    color: black;
+    padding: 50px 100px 0px 100px;
+}
+.experience ul li h3 {
+    padding-top:26px;
+}
+
+.experience ul li p {
+    max-width:230px;
+}
+
+/* Contact */
+.contact .icons {
+    font-size:70px;
+    color: white;
+}
+.contact {
+    text-align:center;
+    color:white;
+    background-color: #24252A;
+    padding: 30px 0px 30px 0px
+}
+
+.contact .footer-header{
+    font-size:32px;
+}
+
+.contact ul li {
+    display: inline-block;
+    padding:0px 60px;
+}
+
+.contact ul {
+    padding-top: 40px;
+}
+@media only screen and (max-width: 1224px) {
+
+    .hero .left-col{
+        margin: auto;
+        line-height:50px;
+    }
+    .hero .left-col .left-col-p1 {
+        display: none;
+    }
+
+    .hero .left-col .left-col-p2 {
+        display: block;
+    }
+
+    .hero .img-sj {
+        margin: auto;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+
+  }
+
+
+  @media only screen and (max-width: 1255px) {
+
+    .about-me {
+        flex-direction: column;
+    }
+
+    .about-me .me, .about-me .a-right-col {
+        margin:auto;
+    }
+
+    .about-me .a-right-col {
+        margin-top:34px;
+    }
+
+  }
+
+
+@media only screen and (max-width: 727px) {
+  header .cta, header .nav-link {
+          display: none;
+      }   
+    header .openbtn {
+        display:block;
+    }
+
+    .about-me .a-right-col  {
+        width: 260px;
+        padding-top:50px;
+        margin:auto;
+    }
+
+    .about-me .me {
+        width:260px;
+    }
+
+    .about-me .a-right-col h2 {
+        font-size: 30px;
+    }
+    .hero .left-col h1 {
+        font-size:35px;
+    }
+    
+    .hero .left-col .left-col-p2 {
+        font-size:18px;
+    }
+
+    .hero .img-sj {
+        width: 365px;
+    }
+
+    .experience .exp-header{
+        font-size: 32px;
+    }
+
+    .experience ul li img{
+        width:150px;
+    }
+
+    .contact .icons {
+        font-size:50px;
+    }
+
+    .contact ul li {
+        padding:0px 18px;
+    }
+
+    .contact .footer-header{
+        font-size:25px;
+    }
+
+  }
+
+  @media only screen and (max-width: 420px) {
+    .hero .img-sj {
+        width:300px;
+    }
+  }
